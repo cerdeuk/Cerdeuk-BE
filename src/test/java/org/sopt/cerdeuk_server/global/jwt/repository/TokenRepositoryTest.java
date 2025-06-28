@@ -44,4 +44,21 @@ class TokenRepositoryTest {
 
 	 }
 
+	@Test
+	@DisplayName("Token 객체를 Redis에서 삭제할 수 있다")
+	void deleteToken() {
+		// given
+		Long userId = 2L;
+		String refreshToken = "delete-refresh-token";
+		Token token = Token.of(userId, refreshToken);
+		tokenRepository.save(token);
+
+		// when
+		tokenRepository.deleteById(userId);
+
+		// then
+		Optional<Token> deletedToken = tokenRepository.findById(userId);
+		assertThat(deletedToken).isNotPresent();
+	}
+
 }
