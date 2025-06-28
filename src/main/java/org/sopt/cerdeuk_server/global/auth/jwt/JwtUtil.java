@@ -85,18 +85,20 @@ public class JwtUtil {
     }
 
     public String createAccessToken(Long userId){
-        return BEARER + createToken(userId, accessTokenExpirationTime);
+        return createToken(userId, accessTokenExpirationTime);
     }
 
     public String createRefreshToken(Long userId){
-        return BEARER + createToken(userId, refreshTokenExpirationTime);
+        return createToken(userId, refreshTokenExpirationTime);
     }
 
     public String createToken(Long userId, long expirationTime){
+        Date now = new Date();
+        Date expirationDate = new Date(now.getTime() + expirationTime);
         return Jwts.builder()
                 .claim(USER_ID_PREFIX, userId)
-                .issuedAt(new Date(System.currentTimeMillis()))
-                .expiration(new Date(System.currentTimeMillis() + expirationTime))
+                .issuedAt(now)
+                .expiration(expirationDate)
                 .signWith(secretKey)
                 .compact();
     }
