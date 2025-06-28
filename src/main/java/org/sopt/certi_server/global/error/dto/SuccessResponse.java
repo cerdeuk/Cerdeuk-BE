@@ -1,6 +1,6 @@
-package org.sopt.cerdeuk_server.global.error.dto;
+package org.sopt.certi_server.global.error.dto;
 
-import org.sopt.cerdeuk_server.global.error.code.SuccessCode;
+import org.sopt.certi_server.global.error.code.SuccessCode;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;

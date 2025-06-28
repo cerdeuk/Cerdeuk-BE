@@ -1,13 +1,13 @@
-package org.sopt.cerdeuk_server;
+package org.sopt.certi_server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CerdeukServerApplication {
+public class CertiServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CerdeukServerApplication.class, args);
+		SpringApplication.run(CertiServerApplication.class, args);
 	}
 
 }

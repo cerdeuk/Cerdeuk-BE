@@ -1,9 +1,9 @@
-package org.sopt.cerdeuk_server.global.error.dto;
+package org.sopt.certi_server.global.error.dto;
 
 import java.util.List;
 import java.util.Set;
 
-import org.sopt.cerdeuk_server.global.error.code.ErrorCode;
+import org.sopt.certi_server.global.error.code.ErrorCode;
 import org.springframework.validation.BindingResult;
 
 import com.fasterxml.jackson.annotation.JsonInclude;

@@ -1,7 +1,7 @@
-package org.sopt.cerdeuk_server.global.error.exception;
+package org.sopt.certi_server.global.error.exception;
 
 
-import org.sopt.cerdeuk_server.global.error.code.ErrorCode;
+import org.sopt.certi_server.global.error.code.ErrorCode;
 
 import lombok.Getter;
 

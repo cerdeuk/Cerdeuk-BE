@@ -1,10 +1,10 @@
-package org.sopt.cerdeuk_server.global.handler;
+package org.sopt.certi_server.global.handler;
 
 import java.io.IOException;
 
-import org.sopt.cerdeuk_server.global.error.code.ErrorCode;
-import org.sopt.cerdeuk_server.global.error.dto.ErrorResponse;
-import org.sopt.cerdeuk_server.global.error.exception.BusinessException;
+import org.sopt.certi_server.global.error.code.ErrorCode;
+import org.sopt.certi_server.global.error.dto.ErrorResponse;
+import org.sopt.certi_server.global.error.exception.BusinessException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

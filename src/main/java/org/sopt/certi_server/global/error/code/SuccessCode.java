@@ -1,4 +1,4 @@
-package org.sopt.cerdeuk_server.global.error.code;
+package org.sopt.certi_server.global.error.code;
 
 import org.springframework.http.HttpStatus;
 
