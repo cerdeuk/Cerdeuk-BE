@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.sopt.cerdeuk_server.global.auth.jwt.JwtUtil;
+import org.sopt.cerdeuk_server.global.error.exception.UnauthorizedException;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -40,6 +41,12 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String token = jwtUtil.extractToken(request);
+        boolean tokenExpired = jwtUtil.isTokenExpired(token);
+
+        if(tokenExpired){
+            throw new UnauthorizedException();
+        }
+
         Long userId = jwtUtil.getUserId(token);
         authenticate(request, userId);
         filterChain.doFilter(request, response);
