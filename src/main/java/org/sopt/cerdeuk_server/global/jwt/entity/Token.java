@@ -17,6 +17,7 @@ import lombok.NoArgsConstructor;
 @RedisHash(value = "refresh_token")
 public class Token {
 
+	//userId
 	@Id
 	private Long id;
 
