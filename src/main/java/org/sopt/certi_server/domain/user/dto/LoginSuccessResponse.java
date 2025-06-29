@@ -1,4 +1,4 @@
-package org.sopt.cerdeuk_server.domain.user.dto;
+package org.sopt.certi_server.domain.user.dto;
 
 public record LoginSuccessResponse(
     String accessToken,

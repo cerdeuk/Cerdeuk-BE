@@ -1,4 +1,4 @@
-package org.sopt.cerdeuk_server.global.auth.security;
+package org.sopt.certi_server.global.filter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.FilterChain;
@@ -7,10 +7,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.sopt.cerdeuk_server.global.error.code.ErrorCode;
-import org.sopt.cerdeuk_server.global.error.dto.ErrorResponse;
-import org.sopt.cerdeuk_server.global.error.exception.BadRequestException;
-import org.sopt.cerdeuk_server.global.error.exception.UnauthorizedException;
+import org.sopt.certi_server.global.error.code.ErrorCode;
+import org.sopt.certi_server.global.error.dto.ErrorResponse;
+import org.sopt.certi_server.global.error.exception.UnauthorizedException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.filter.OncePerRequestFilter;

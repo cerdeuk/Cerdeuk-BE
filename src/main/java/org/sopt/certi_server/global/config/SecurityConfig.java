@@ -2,9 +2,9 @@ package org.sopt.cerdeuk_server.global.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
-import org.sopt.cerdeuk_server.global.auth.jwt.JwtUtil;
-import org.sopt.cerdeuk_server.global.auth.security.ExceptionHandlerFilter;
-import org.sopt.cerdeuk_server.global.auth.security.JwtAuthenticationFilter;
+import org.sopt.certi_server.global.jwt.util.JwtUtil;
+import org.sopt.certi_server.global.filter.ExceptionHandlerFilter;
+import org.sopt.certi_server.global.filter.JwtAuthenticationFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
