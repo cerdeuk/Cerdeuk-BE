@@ -1,11 +1,10 @@
-package org.sopt.cerdeuk_server.domain.user.controller;
+package org.sopt.certi_server.domain.user.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.sopt.cerdeuk_server.domain.user.dto.LoginSuccessResponse;
-import org.sopt.cerdeuk_server.domain.user.service.AuthService;
-import org.sopt.cerdeuk_server.global.auth.jwt.JwtUtil;
-import org.sopt.cerdeuk_server.global.error.code.SuccessCode;
-import org.sopt.cerdeuk_server.global.error.dto.SuccessResponse;
+import org.sopt.certi_server.domain.user.dto.LoginSuccessResponse;
+import org.sopt.certi_server.domain.user.service.AuthService;
+import org.sopt.certi_server.global.error.code.SuccessCode;
+import org.sopt.certi_server.global.error.dto.SuccessResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;

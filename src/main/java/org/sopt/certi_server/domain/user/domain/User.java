@@ -1,4 +1,4 @@
-package org.sopt.cerdeuk_server.domain.user.domain;
+package org.sopt.certi_server.domain.user.domain;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
